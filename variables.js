@@ -5,6 +5,10 @@ accountCity="Partawal"
 let accountState;
 
 // accountId=2    not allowed
+/*
+prefer not to use var bcoz of issue in block scopeand functional scope
+*/
+
 accountEmail="rs@gmail.com"
 accountPassword="11111"
 accountCity="gkp"
