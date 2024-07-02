@@ -12,7 +12,7 @@ const anotherId=Symbol("123")
 
 // console.log(id)
 // console.log(anotherId)
-console.log(id===anotherId)
+// console.log(id===anotherId)
 // const bigNum=516463459876893n
 
 // Refrence(non premitive)
@@ -27,4 +27,24 @@ let obj={
 const fun=function(){
     console.log("hello world")
 }
-console.log(typeof heros)
+// console.log(typeof heros)
+
+//------------------------------------------------------------
+
+//  Stack (Premitive),Heap (Non-Premitive)
+
+let myname="surya Singh"
+let anotherName="myname"
+
+console.log(myname)
+console.log(anotherName)
+
+let user1={
+    email:"singh@gmail.com",
+    upi:"user@ybl",
+}
+let user2=user1
+user2.email="surya@gmail.com"
+
+console.log(user1.email)
+console.log(user2.email)
