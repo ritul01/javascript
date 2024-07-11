@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Code with Singh</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const greet=function(){
+        console.log("Singh");
+    }
+    const changeTxt=function(){
+        document.querySelector('h1')
+        .innerHTML="JS is best"
+    }
+    const change=setTimeout(changeTxt,2000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(change)
+        console.log("stopped");
+    })
+</script>
+</html>
